@@ -2,7 +2,7 @@
  * @file mkloubert.c
  * @brief A simple dynamically loadable Linux kernel module that creates a proc file entry.
  *
- * This module creates a /proc entry named "mkloubert_driver" and provides a read handler
+ * This module creates a /proc entry named "mkloubert" and provides a read handler
  * to output a simple "Ack!\n" message when the proc entry is read.
  */
 
@@ -23,7 +23,7 @@ static struct proc_dir_entry *custom_proc_node;
 /**
  * @brief Read handler for the proc file.
  *
- * This function is called when the /proc/mkloubert_driver file is read.
+ * This function is called when the /proc/mkloubert file is read.
  * It outputs a simple "Hail to The GitFather!\n" message.
  *
  * @param file_pointer Pointer to the file structure (unused).
@@ -69,7 +69,7 @@ static struct proc_ops driver_proc_ops = {
  * @brief Module initialization function.
  *
  * This function is called when the module is loaded into the kernel. It creates
- * a proc entry named "mkloubert_driver" and assigns the read handler.
+ * a proc entry named "mkloubert" and assigns the read handler.
  *
  * @return 0 on success, -1 on failure.
  */

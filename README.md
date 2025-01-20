@@ -1,6 +1,6 @@
 # Linux Kernel Module: mkloubert.ko
 
-This repository contains a simple Linux kernel module named **mkloubert_driver**. The module creates a proc entry in the Linux virtual filesystem, allowing users to read a simple message ("Hail to The GitFather!\n") from `/proc/mkloubert`.
+This repository contains a simple Linux kernel module named **mkloubert**. The module creates a proc entry in the Linux virtual filesystem, allowing users to read a simple message ("Hail to The GitFather!\n") from `/proc/mkloubert`.
 
 ## Features
 
