@@ -1,5 +1,5 @@
 /**
- * @file mkloubert_driver.c
+ * @file mkloubert.c
  * @brief A simple dynamically loadable Linux kernel module that creates a proc file entry.
  *
  * This module creates a /proc entry named "mkloubert_driver" and provides a read handler
